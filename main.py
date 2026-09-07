@@ -3,7 +3,7 @@ from importlib import import_module
 
 def mostrar_menu():
     print("\n=== SISTEMA ACADÉMICO COLABORATIVO ===")
-    for i in range(1, 21):
+    for i in range(1, 31):
         print(f"{i}. Ejecutar tarea {i:02d}")
     print("0. Salir")
 
@@ -25,7 +25,7 @@ def main():
         if opcion == "0":
             print("Fin del programa.")
             break
-        if opcion.isdigit() and 1 <= int(opcion) <= 20:
+        if opcion.isdigit() and 1 <= int(opcion) <= 30:
             ejecutar_tarea(int(opcion))
         else:
             print("Opción inválida.")
